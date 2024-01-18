@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*---------- Start Nav-Bar ------------*/
+.nav-bar {
+    background-color: #564990;
+    padding: 22px;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor-logo {
+    height: 120px;
+}
+
+.logo {
+    padding: 15px 15px;
+}
+
+nav ul li a.active {
+    border-bottom: 7px solid #0CB19A;
+    padding-bottom: 16px;
+}
+
+/*---------- End Nav-Bar ------------*/
+
+/*---------- Start Home Page ------------*/
+
+.container-video {
+    position: relative;
+}
+
+#video {
+    width: 100%;
+}
+
+.text-overhead {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 4rem;
+    text-shadow: 0 2px 2px black;
+}
+
+.span-video {
+    display: flex;
+    line-height: 0.4;
+}
+
+.text-p-rescue {
+    font-size: 2rem;
+    padding: 30px 0;
+    color: white;
+    text-shadow: 0 2px 2px black;
+}
+
+.btn-video {
+    padding: 20px 20px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #0CB19A;
+    color: white;
+}
+
+/*---------- End Home Page ------------*/
+
+/*---------- Start Footer ------------*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #564990;
+    color: white;
+}
+
+.footer > p {
+    font-size: 1.2rem;
+}
+
+/*---------- End Footer ------------*/

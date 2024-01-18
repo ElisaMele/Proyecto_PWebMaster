@@ -1,0 +1,75 @@
+.involved {
+    margin-bottom: 50px;
+}
+
+.btn-volunteer {
+    margin-top: 15px;
+    padding: 15px 25px;
+    background-color: #0CB19A;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.btn-volunteer:hover {
+    background-color: #423870;
+}
+
+.section-involved {
+    display: flex;
+    justify-content: center;
+}
+
+.container-involved {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px; 
+}
+
+.card-involved {
+    width: 350px;
+    height: 500px;
+    margin: 10px;
+    overflow: hidden; 
+}
+
+.img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in;
+    object-fit: cover;
+}
+
+.card-involved:hover .img {
+    cursor: pointer;
+    transform: scale(1.05);
+    transform-origin: center;
+}
+
+.spn-text {
+    border-bottom: 2px solid #423870;
+}
+
+.card-involved:hover .involved-text>h4>.spn-text {
+    cursor: pointer;
+    border-bottom: 7px solid #0CB19A;
+}
+
+.involved-text>h4 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #423870;
+    margin-bottom: 15px;
+}
+
+.involved-text>p {
+    margin: 10px;
+    font-size: 17px;
+    text-align: center;
+}
