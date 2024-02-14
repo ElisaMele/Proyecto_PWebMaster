@@ -6,6 +6,8 @@ var logger = require('morgan');
 
 require('dotenv').config();
 
+var pool = require('./models/bd');
+
 var indexRouter = require('./routes/index');
 var adoptRouter = require('./routes/adopt');
 var servicesRouter = require('./routes/services');
@@ -29,6 +31,11 @@ app.use('/adopt', adoptRouter);
 app.use('/services', servicesRouter);
 app.use('/getinvolved', getinvolvedRouter);
 app.use('/about', aboutRouter);
+
+//select
+// pool.query("select * from empleados").then(function(resultados){
+//   console.log(resultados);
+// });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
