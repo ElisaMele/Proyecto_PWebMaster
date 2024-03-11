@@ -1,0 +1,46 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: #FFFFFF;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding-top: 150px;
+}
+
+.container-admin {
+    padding-top: 150px;
+}
+
+.text-end {
+    padding-right: 100px;
+}
+
+.table-form {
+    margin: 0 50px 0 50px;
+}
+
+.col-7>h3 {
+    margin-left: 80px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    padding-top: 150px;
+}

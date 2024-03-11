@@ -6,13 +6,12 @@ var logger = require('morgan');
 
 require('dotenv').config();
 
-var pool = require('./models/bd');
-
 var indexRouter = require('./routes/index');
 var adoptRouter = require('./routes/adopt');
 var servicesRouter = require('./routes/services');
 var getinvolvedRouter = require('./routes/getinvolved');
 var aboutRouter = require('./routes/about');
+var loginRouter = require('./routes/admin/login');
 
 var app = express();
 
@@ -31,6 +30,7 @@ app.use('/adopt', adoptRouter);
 app.use('/services', servicesRouter);
 app.use('/getinvolved', getinvolvedRouter);
 app.use('/about', aboutRouter);
+app.use('/admin/login', loginRouter);
 
 //select
 // pool.query("select * from empleados").then(function(resultados){
