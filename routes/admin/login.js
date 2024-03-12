@@ -8,6 +8,13 @@ router.get('/', function (req, res, next) {
     });
 });
 
+router.get('/logout', function(req, res, next) {
+    req.session.destroy();
+    res.render('admin/login', {
+        layout: 'admin/layout'
+    });
+});
+
 router.post('/', async (req, res, next) => {
     try {
         console.log(req.body)
@@ -21,7 +28,7 @@ router.post('/', async (req, res, next) => {
 
             req.session.id_usuario = data.id;
             req.session.nombre = data.usuario;
-            res.redirect('admin/novedades');
+            res.redirect('/admin/novedades');
         } else {
             res.render('admin/login', {
                 layout: 'admin/layout',
