@@ -10,6 +10,7 @@ var indexRouter = require('./routes/index');
 var adoptRouter = require('./routes/adopt');
 var servicesRouter = require('./routes/services');
 var getinvolvedRouter = require('./routes/getinvolved');
+var testimonialsRouter = require('./routes/testimonials');
 var aboutRouter = require('./routes/about');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
@@ -51,6 +52,7 @@ app.use('/adopt', adoptRouter);
 app.use('/services', servicesRouter);
 app.use('/getinvolved', getinvolvedRouter);
 app.use('/about', aboutRouter);
+app.use('/testimonials', testimonialsRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', secured, adminRouter)
 

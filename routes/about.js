@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var contactoModel = require('../models/contactoModel');
 
 router.get('/', function (req, res, next) {
   res.render('about', {
@@ -32,6 +33,7 @@ router.post('/', async (req, res, next) => {
   });
 
   var info = await transport.sendMail(obj);
+  var contacto = await contactoModel.insertContacto(req.body);
 
   res.render('about', {
     message: 'Your message was sent successfully.'

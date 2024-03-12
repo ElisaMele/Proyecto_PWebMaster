@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Modificar el testimonio</h4>
+            <form action="/admin/novedades/modificar" method="post">
+                <input type="hidden" value="{{novedad.id}}" name="id">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nombre" value="{{novedad.nombre}}" name="nombre">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Mascota" value="{{novedad.mascota}}" name="mascota">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Fecha" value="{{novedad.fecha}}" name="fecha">
+                </div>
+                <div class="form-group">
+                    <textarea type="text" class="form-control" placeholder="Mensaje" name="mensaje" rows="8">{{novedad.mensaje}}</textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Modificar</button>
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+
+</div>
